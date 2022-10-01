@@ -2,3 +2,4 @@ RAILS_ENV=production
 RAILS_SERVE_STATIC_FILES=true
 RAILS_LOG_TO_STDOUT=true
 PORT=52001
+NGINX_SERVER_NAME=rails.chartewalk.com

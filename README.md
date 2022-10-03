@@ -1,24 +1,14 @@
-# README
+# Sample Piku app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example rails app, with a Procfile to use sqlite3 on piku.
 
-Things you may want to cover:
+Tweaks you'll need:
+- Create your own master.key file
+- Edit your protected credentials with `rails credentials:edit` and set a value for `secret_key_base`
 
-* Ruby version
+These changes are needed since it's insecure to publish my master.key.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+After you deploy this app to your piku server, add an ENV var for your master key:
+```bash
+piku config:set RAILS_MASTER_KEY=$(cat config/master.key)
+```

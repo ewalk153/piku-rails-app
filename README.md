@@ -1,6 +1,6 @@
 # Sample Piku app
 
-This is an example rails app, with a Procfile to use sqlite3 on piku.
+This is an example rails app, with a Procfile to use sqlite3 on [piku](https://github.com/piku/piku).
 
 Tweaks you'll need:
 - Create your own master.key file
